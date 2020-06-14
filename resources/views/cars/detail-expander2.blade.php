@@ -1,5 +1,6 @@
-@extends('layout')
+@extends('layout.app')
 
+@section('content')
 <!-- start banner Area -->
 <section class="banner-area relative" id="home">    
     <div class="overlay overlay-bg"></div>
@@ -8,9 +9,10 @@
             <div class="about-content col-lg-12">
                 <h1 class="text-white">
                     Info Mobil               
-                </h1>   
+                </h1>
+                @foreach ($nama as $p)   
                 <p class="text-white link-nav"><a href="{{ route('home')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="">cars
-                </a> <span class="lnr lnr-arrow-right"></span> <a href="{{ route('cars-raja')}}"> Raja Sewa Mobil</a></p>
+                </a> <span class="lnr lnr-arrow-right"></span> <a href="{{ route('cars-raja')}}"> {{$p->nama_toko}}</a></p>
             </div>                                          
         </div>
     </div>
@@ -31,7 +33,7 @@
                     </a>
                     <div class="content-wrap">
                         <p>
-                            Seputar info mobil Expander dari Raja Sewa Mobil : <br>
+                            Seputar info mobil Expander dari {{$p->nama_toko}} : <br>
                             <ul>
                                 <li>1. Mobil : Expander </li>
                                 <li>2. Merk/Brand : Suzuki</li>
@@ -188,16 +190,17 @@
 <div class="col-lg-4 sidebar">
     <div class="single-widget protfolio-widget">
         <img src="img/rajasewamobil.jpg" class="img-fluid" alt="">
-        <a href="#"><h4>Raja Sewa Mobil</h4></a>
+        <a href="#"><h4>{{$p->nama_toko}}</h4></a>
         <p>
-            Kami memberikan pelayan terbaik untuk para perental ataupun client kami, mobil yang kami rentalkan itu mobil yang sangat nyaman buat anda.
+           {{$p->deskripsi}}
         </p>
         <ul>
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
             <li><a href="#"><i class="fa fa-behance"></i></a></li>
-        </ul>                               
+        </ul>
+        @endforeach                               
     </div>
     
 </div>
@@ -205,5 +208,5 @@
 </div>  
 </section>
 <!-- End blog-posts Area -->
-
+@endsection
 

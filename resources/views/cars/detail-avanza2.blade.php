@@ -1,5 +1,6 @@
-@extends('layout')
+@extends('layout.app')
 
+@section('content')
 <!-- start banner Area -->
 <section class="banner-area relative" id="home">    
     <div class="overlay overlay-bg"></div>
@@ -8,9 +9,10 @@
             <div class="about-content col-lg-12">
                 <h1 class="text-white">
                     Info Mobil               
-                </h1>   
+                </h1>
+                @foreach ($toko as $p)   
                 <p class="text-white link-nav"><a href="{{ route('home')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="">cars
-                </a> <span class="lnr lnr-arrow-right"></span> <a href="{{ route('cars-raja')}}"> Platinum Rent Car</a></p>
+                </a> <span class="lnr lnr-arrow-right"></span> <a href="{{ route('cars-raja')}}"> {{$p->nama_toko}}</a></p>
             </div>                                          
         </div>
     </div>
@@ -31,7 +33,7 @@
                     </a>
                     <div class="content-wrap">
                         <p>
-                            Seputar info mobil avanza dari Platinum Rent Car : <br>
+                            Seputar info mobil avanza dari {{$p->nama_toko}} : <br>
                             <ul>
                                 <li>1. Mobil : Avanza </li>
                                 <li>2. Merk/Brand : Toyota</li>
@@ -187,10 +189,10 @@
 </div>
 <div class="col-lg-4 sidebar">
     <div class="single-widget protfolio-widget">
-        <img src="img/platinum.jpg" alt="" class="img-fluid">
-        <a href="#"><h4>Platinum Rent Car</h4></a>
+        <img src="{{ asset('storage/toko/' . $p->logo_toko) }}" alt="{{ $p->nama_toko }}" class="img-fluid">
+        <a href="#"><h4>{{$p->nama_toko}}</h4></a>
         <p>
-            Selamat merental mobil dari kami, mudah mudahan nyaman sesuai dengan ekspetasi anda.
+            {{$p->deskripsi}}
         </p>
         <ul>
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -199,11 +201,12 @@
             <li><a href="#"><i class="fa fa-behance"></i></a></li>
         </ul>                               
     </div>
+    @endforeach
 
 </div>
 </div>
 </div>	
 </section>
 <!-- End blog-posts Area -->
-
+@endsection
 

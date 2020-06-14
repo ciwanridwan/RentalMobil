@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Rental;
+use App\Toko;
 use Illuminate\Http\Request;
 
 class RentalController extends Controller
@@ -44,32 +45,38 @@ class RentalController extends Controller
 
     public function detailFortunerDua()
     {
-        return view('cars.detail-fortuner2');
+        $toko = Toko::where('id', 3)->get();
+        return view('cars.detail-fortuner2', compact('toko'));
     }
 
     public function detailExpander()
     {
-        return view('cars.detail-expander');
+        $toko = Toko::where('id', 2)->get();
+        return view('cars.detail-expander', compact('toko'));
     }
 
     public function detailAvanzaDua()
     {
-        return view('cars.detail-avanza2');
+        $toko = Toko::where('id', 2)->get();
+        return view('cars.detail-avanza2', compact('toko'));
     }
 
     public function detailAvanzaTiga()
     {
-        return view('cars.detail-avanza3');
+        $nama = Toko::where('id', 1)->get();
+        return view('cars.detail-avanza3', compact('nama'));
     }
 
     public function detailExpanderDua()
     {
-        return view('cars.detail-expander2');
+        $nama = Toko::where('id', 1)->get();
+        return view('cars.detail-expander2', compact('nama'));
     }
 
     public function detailErtigaDua()
     {
-        return view('cars.detail-ertiga2');
+        $nama = Toko::where('id', 1)->get();
+        return view('cars.detail-ertiga2', compact('nama'));
     }
 
     public function detailErtiga()
@@ -79,17 +86,20 @@ class RentalController extends Controller
 
     public function detailXenia()
     {
-        return view('cars.detail-xenia');
+        $toko = Toko::where('id', 2)->get();
+        return view('cars.detail-xenia', compact('toko'));
     }
 
     public function detailJazz()
     {
-        return view('cars.detail-jazz');
+        $toko = Toko::where('id', 3)->get();
+        return view('cars.detail-jazz', compact('toko'));
     }
 
     public function detailYaris()
     {
-        return view('cars.detail-yaris');
+        $toko = Toko::where('id', 3)->get();
+        return view('cars.detail-yaris', compact('toko'));
     }
 
     public function detailAvanza()
@@ -111,17 +121,20 @@ class RentalController extends Controller
 
     public function carsCakra()
     {
-        return view('toko.cars-cakra');
+        $toko = Toko::where('id', 4)->get();
+        return view('toko.cars-cakra', compact('toko'));
     }
 
     public function carsArtharent()
     {
-        return view('toko.cars-artharent');
+        $toko = Toko::where('id', 3)->get();
+        return view('toko.cars-artharent', compact('toko'));
     }
 
     public function carsPlatinum()
     {
-        return view('toko.cars-platinum');
+        $toko = Toko::where('id', 2)->get();
+        return view('toko.cars-platinum', compact('toko'));
     }
 
     public function carsKeken()
@@ -131,7 +144,8 @@ class RentalController extends Controller
 
     public function carsRaja()
     {
-        return view('toko.cars-raja');
+        $nama = Toko::where('id', 1)->get();
+        return view('toko.cars-raja', compact('nama'));
     }
 
     public function blog()
@@ -159,7 +173,8 @@ class RentalController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $toko = Toko::all();
+        return view('home', compact('toko'));
     }
 
     /**
