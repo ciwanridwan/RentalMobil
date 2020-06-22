@@ -12,6 +12,7 @@ class TokoRentalController extends Controller
 {
     public function data()
     {
+        // INI UNTUK MENGAKSES DATA TOKO RENTAL BERDASARKAN ID YG DI PILIH
         $status = Toko::exists('status');
         $rental = Toko::where('id', 1)->get();
         $rental2 = Toko::where('id', 2)->get();
@@ -24,6 +25,7 @@ class TokoRentalController extends Controller
     }
     public function storeRegister(Request $request) 
     {
+        // INI VALIDASI FORM REGISTER 
         $data = $request->validate([
             'username' => 'required|string|max:255',
             'email' => 'required|email',
@@ -37,11 +39,13 @@ class TokoRentalController extends Controller
 
     public function register()
     {
+        // INI REDIRECT KE FORM REGISTER
         return view('admin.register');
     }
 
     public function storeLogin(Request $request)
     {
+        // INI VALIDASI LOGIN
         $validasi = $request->validate([
             'username' => 'required|exists:admins,username',
             'password' => 'required|exists:admins,password'
@@ -55,6 +59,7 @@ class TokoRentalController extends Controller
 
     public function login()
     {
+        // INI REDIRECT KE LOGIN
         return view('admin.login');
     }
     /**
@@ -64,6 +69,7 @@ class TokoRentalController extends Controller
      */
     public function index()
     {
+        // INI REDIRECT KE HALAMAN ADMIN
         $toko = Toko::all();
         if (request()->q != '') {
             $toko = $toko->where('nama_toko', 'LIKE', '%' . request()->q . '%');
@@ -80,6 +86,7 @@ class TokoRentalController extends Controller
      */
     public function create()
     {
+        // INI REDIRECT KE HALAMAN FORM INPUT
         return view('admin.create');
     }
 
@@ -91,6 +98,7 @@ class TokoRentalController extends Controller
      */
     public function store(Request $request)
     {
+        //INI VALIDASI INPUT DATA TOKO
         $this->validate($request, [
             'nama_toko' => 'required|string|max:255',
             'logo_toko' => 'required|image|mimes:png,jpeg,jpg',

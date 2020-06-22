@@ -77,7 +77,7 @@
 <!-- End model Area -->         
 
 <!-- Start callaction Area -->
-<section class="callaction-area relative section-gap">
+<!-- <section class="callaction-area relative section-gap">
     <div class="overlay overlay-bg"></div>
     <div class="container">
         <div class="row justify-content-center">
@@ -90,6 +90,6 @@
             </div>
         </div>
     </div>  
-</section>
+</section> -->
 <!-- End callaction Area -->                
 @endsection

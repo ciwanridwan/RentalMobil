@@ -30,6 +30,7 @@ class RentalController extends Controller
 
     public function detailInova()
     {
+        $toko = Toko::where('id', 4)->get();
         return view('cars.detail-inova');
     }
 
