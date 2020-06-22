@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+
 
 // Admin
 Route::get('login', 'TokoRentalController@login')->name('login');
@@ -26,7 +24,6 @@ Route::get('admin-form', 'TokoRentalController@create')->name('admin-form');
 Route::get('dashboard', 'TokoRentalController@index')->name('dashboard');
 Route::post('store-form', 'TokoRentalController@store')->name('admin-store');
 Route::get('/', 'TokoRentalController@data')->name('home');
-
 
 Route::get('team', 'RentalController@team')->name('team');
 // Route::get('home', 'RentalController@index')->name('home');
