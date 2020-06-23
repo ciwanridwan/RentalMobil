@@ -19,7 +19,6 @@
 
 <section class="reviews-area section-gap" id="review">
     <div class="container">
-
         <div class="row d-flex justify-content-center">
             <div class="col-md-8 pb-40 header-text text-center">
                 <h1>Daftar Mobil Yang Tersedia</h1>
@@ -57,7 +56,6 @@
                         <h3>Rp 15juta/hari</h3> <br>
                         
                         <h4>Suzuki Ertiga</h4>
-
                     </a>
                     <div class="star">
                         <span class="fa fa-star checked"></span>
@@ -66,7 +64,6 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                     </div>
-
                 </div>
             </div>
 
@@ -90,11 +87,7 @@
 
                 </div>
             </div>              
-
-
         </div>
     </div>  
 </section>
-
-				
 @endsection

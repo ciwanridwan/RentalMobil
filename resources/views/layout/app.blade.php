@@ -14,7 +14,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Car Rentals</title>
+    <title>Rental Mobil</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
         <!--
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between d-flex">
               <div id="logo">
-                <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                <a href="index.html"><img src="" alt="" title="" /></a>
             </div>
             @include('layout.header')
             <!-- #nav-menu-container -->		    		

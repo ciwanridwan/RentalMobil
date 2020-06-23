@@ -25,6 +25,7 @@ Route::get('dashboard', 'TokoRentalController@index')->name('dashboard');
 Route::post('store-form', 'TokoRentalController@store')->name('admin-store');
 Route::get('/', 'TokoRentalController@data')->name('home');
 
+
 Route::get('team', 'RentalController@team')->name('team');
 // Route::get('home', 'RentalController@index')->name('home');
 Route::get('about', 'RentalController@about')->name('about');

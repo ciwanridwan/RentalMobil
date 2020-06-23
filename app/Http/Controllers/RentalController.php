@@ -117,35 +117,37 @@ class RentalController extends Controller
     
     public function carsBintangMas()
     {
-        return view('toko.cars-bintangmas');
+        $toko = Toko::all();
+        return view('toko.cars-bintangmas', compact('toko'));
     }
 
     public function carsCakra()
     {
-        $toko = Toko::where('id', 4)->get();
+        $toko = Toko::all();
         return view('toko.cars-cakra', compact('toko'));
     }
 
     public function carsArtharent()
     {
-        $toko = Toko::where('id', 3)->get();
+        $toko = Toko::all();
         return view('toko.cars-artharent', compact('toko'));
     }
 
     public function carsPlatinum()
     {
-        $toko = Toko::where('id', 2)->get();
+        $toko = Toko::all();
         return view('toko.cars-platinum', compact('toko'));
     }
 
     public function carsKeken()
     {
-        return view('toko.cars-keken');
+        $toko = Toko::all();
+        return view('toko.cars-keken', compact('toko'));
     }
 
     public function carsRaja()
     {
-        $nama = Toko::where('id', 1)->get();
+        $nama = Toko::all();
         return view('toko.cars-raja', compact('nama'));
     }
 

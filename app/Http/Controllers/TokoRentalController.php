@@ -14,14 +14,8 @@ class TokoRentalController extends Controller
     {
         // INI UNTUK MENGAKSES DATA TOKO RENTAL BERDASARKAN ID YG DI PILIH
         $status = Toko::exists('status');
-        $rental = Toko::where('id', 1)->get();
-        $rental2 = Toko::where('id', 2)->get();
-        $rental3 = Toko::where('id', 3)->get();
-        $rental4 = Toko::where('id', 4)->get();
-        $rental5 = Toko::where('id', 5)->get();
-        $rental6 = Toko::where('id', 6)->get();
-        // dd($rental);
-        return view('home', compact('rental', 'rental2', 'rental3', 'rental3', 'rental4', 'rental5', 'rental6', 'status'));
+        $data = Toko::all();
+        return view('home', compact('data', 'status'));
     }
     public function storeRegister(Request $request) 
     {

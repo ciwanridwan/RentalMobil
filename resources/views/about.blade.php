@@ -8,9 +8,9 @@
         <div class="row d-flex align-items-center justify-content-center">
             <div class="about-content col-lg-12">
                 <h1 class="text-white">
-                    About Us				
+                    Tentang Kami				
                 </h1>	
-                <p class="text-white link-nav"><a href="{{ route('home')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{{ route('about')}}"> About Us</a></p>
+                <p class="text-white link-nav"><a href="{{ route('home')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{{ route('about')}}"> Tentang Kami</a></p>
             </div>											
         </div>
     </div>
@@ -33,7 +33,7 @@
                 <p>
                 Website ini ialah website informasi tentang toko rental mobil yang tersedia di daerah Jabodetabek khususnya daerah Kota Jakarta Selatan.
                 </p>
-                <a class="text-uppercase primary-btn" href="{{ route('about')}}">Get Details</a>
+                <a class="text-uppercase primary-btn" href="{{ route('about')}}">Lebih Detail</a>
             </div>
         </div>
     </div>	
@@ -80,35 +80,6 @@
         </div>
     </div>	
 </section>
-<!-- End feature Area -->				
-
-<!-- Start fact Area -->
-<section class="facts-area section-gap" id="facts-area">
-    <div class="container">
-        <div class="row">
-            <div class="col single-fact">
-                <h1 class="counter">2536</h1>
-                <p>Projects Completed</p>
-            </div>
-            <div class="col single-fact">
-                <h1 class="counter">6784</h1>
-                <p>Really Happy Clients</p>
-            </div>
-            <div class="col single-fact">
-                <h1 class="counter">1059</h1>
-                <p>Total Tasks Completed</p>
-            </div>
-            <div class="col single-fact">
-                <h1 class="counter">2239</h1>
-                <p>Cups of Coffee Taken</p>
-            </div>	
-            <div class="col single-fact">
-                <h1 class="counter">435</h1>
-                <p>In House Professionals</p>
-            </div>												
-        </div>
-    </div>	
-</section>
-<!-- end fact Area -->							
+<!-- End feature Area -->											
 @endsection
 

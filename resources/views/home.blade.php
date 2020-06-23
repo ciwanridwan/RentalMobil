@@ -50,7 +50,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-8">
                         <div class="single-review">
-                            @foreach ($rental as $p)
+                            @foreach ($data->where('id', 1) as $p)
                             <a href="{{ route('cars-raja')}}">
                                 <img src="{{ asset('storage/toko/' . $p->logo_toko) }}" alt="{{ $p->nama_toko }}" width="400px" class="img-fluid">
                                 <h4>{{$p->nama_toko}}</h4>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="col-lg-6 col-md-8">
                         <div class="single-review">
-                            @foreach ($rental2 as $a)
+                            @foreach ($data->where('id', 2) as $a)
                             <a href="{{ route('cars-platinum')}}">
                                 <img src="{{ asset('storage/toko/' . $a->logo_toko) }}" class="img-fluid" alt="{{$a->nama_toko}}" width="400px">
                                 <h4>{{$a->nama_toko}}</h4>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="col-lg-6 col-md-8">
                         <div class="single-review">
-                            @foreach ($rental3 as $w)
+                            @foreach ($data->where('id', 3) as $w)
                             <a href="{{ route('cars-artharent')}}">
                                 <img src="{{ asset('storage/toko/' . $w->logo_toko) }}" alt="{{$w->nama_toko}}" width="400px" class="img-fluid">
                                 <h4>{{$w->nama_toko}}</h4>
@@ -124,7 +124,7 @@
                     </div>							
                     <div class="col-lg-6 col-md-8">
                         <div class="single-review">
-                            @foreach ($rental4 as $k)
+                            @foreach ($data->where('id', 4) as $k)
                             <a href="{{ route('cars-cakra')}}">
                                 <img src="{{ asset('storage/toko/' . $k->logo_toko) }}" alt="{{$k->nama_toko}}" width="400px" class="img-fluid">
                                 <h4>{{$k->nama_toko}}</h4>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-lg-6 col-md-8">
                         <div class="single-review">
-                            @foreach ($rental5 as $r)
+                            @foreach ($data->where('id', 5) as $r)
                             <a href="{{ route('cars-bintangmas')}}">
                                 <img src="{{ asset('storage/toko/' . $r->logo_toko) }}" alt="{{$r->nama_toko}}" width="400px" class="img-fluid">
                                 <h4>{{$r->nama_toko}}</h4>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="col-lg-6 col-md-8">
                         <div class="single-review">
-                            @foreach ($rental6 as $y)
+                            @foreach ($data->where('id', 6) as $y)
                             <a href="{{ route('cars-keken')}}">
                                 <img src="{{ asset('storage/toko/' . $y->logo_toko) }}" alt="$y->nama_toko" width="400px" class="img-fluid">
                                 <h4>{{$y->nama_toko}}</h4>

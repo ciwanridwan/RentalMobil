@@ -15,82 +15,80 @@
         </div>
     </div>
 </section>
-<!-- End banner Area -->    
+<!-- End banner Area -->
 
-<!-- Start model Area -->
-<section class="model-area section-gap" id="cars">
+<section class="reviews-area section-gap" id="review">
     <div class="container">
-        <div class="row d-flex justify-content-center pb-40">
-            <div class="col-md-8 pb-40 header-text">
-                <h1 class="text-center pb-10">Bintangmas Rental Mobil</h1>
-                <p class="text-center">
-                    Silahkan Pilih Mobil Yang Ingin Anda Rental 
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 pb-40 header-text text-center">
+                <h1>Daftar Mobil Yang Tersedia</h1>
+                <p class="mb-10 text-center">
                 </p>
             </div>
-        </div>              
-        <div class="active-model-carusel">
-            <div class="row align-items-center single-model item">
-                <div class="col-lg-6 model-left">
-                    <div class="title justify-content-between d-flex">
-                        <h2 class="mt-20">Toyota Alphard</h2>
-                    </div>
-                    <h3>Rp 30juta/hari</h3>
-                    <br>
-                    <a class="text-uppercase primary-btn" href="{{ route('detail-alphard')}}">Book This Car Now</a>
-                </div>
+        </div>
 
-                <div class="col-lg-6 model-right">
-                    <img class="img-fluid" src="img/mobil/alphard.jpg" alt="">
+        <div class="row">
+            <div class="col-lg-6 col-md-8">
+                <div class="single-review">
+
+                    <a href="{{ route('detail-alphard')}}">
+                        <img src="img/mobil/alphard.jpg" alt="alphard" width="400px" class="img-fluid">
+                        <h3>Rp 25juta/hari</h3> <br>
+
+                        <h4>Toyota Alphard</h4>
+                    </a>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+
                 </div>
             </div>
-            <div class="row align-items-center single-model item">
-                <div class="col-lg-6 model-left">
-                    <div class="title justify-content-between d-flex">
-                        <h2 class="mt-20">Honda Jazz</h2>
-                    </div>
-                    <h3>Rp 20juta/hari</h3>
-                    <br>
-                    <a class="text-uppercase primary-btn" href="{{ route('detail-jazz2')}}">Book This Car Now</a>
-                </div>
 
-                <div class="col-lg-6 model-right">
-                    <img class="img-fluid" src="img/mobil/jazz2.jpg" alt="">
+            <div class="col-lg-6 col-md-8">
+                <div class="single-review">
+
+                    <a href="{{ route('detail-jazz2')}}">
+                        <img src="img/mobil/jazz2.jpg" alt="jazz2" width="400px" class="img-fluid">
+                        <h3>Rp 15juta/hari</h3> <br>
+                        
+                        <h4>Honda Jazz</h4>
+                    </a>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center single-model item">
-                <div class="col-lg-6 model-left">
-                    <div class="title justify-content-between d-flex">
-                        <h2 class="mt-20">Suzuki Ertiga</h2>
-                    </div>
-                    <h3>Rp 15juta/hari</h3>
-                    <br>
-                    <a class="text-uppercase primary-btn" href="{{ route('detail-ertiga3')}}">Book This Car Now</a>
-                </div>
 
-                <div class="col-lg-6 model-right">
-                    <img class="img-fluid" src="img/mobil/ertiga3.jpg" alt="">
+            <div class="col-lg-6 col-md-8">
+                <div class="single-review">
+
+                    <a href="{{ route('detail-ertiga3')}}">
+                        <img src="img/mobil/ertiga3.jpg" alt="ertiga3" width="400px" class="img-fluid">
+                        <h3>Rp 20juta/hari</h3> <br>
+                        
+                        <h4>Suzuki Ertiga</h4>
+
+                    </a>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+
                 </div>
-            </div>                                              
+            </div>              
         </div>
     </div>  
-</section>
-<!-- End model Area -->         
-
-<!-- Start callaction Area -->
-<!-- <section class="callaction-area relative section-gap">
-    <div class="overlay overlay-bg"></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <h1 class="text-white">Experience Great Support</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <a class="callaction-btn text-uppercase" href="#">Reach Our Support Team</a>    
-            </div>
-        </div>
-    </div>  
-</section> -->
-<!-- End callaction Area -->                
+</section>               
 @endsection
 
